@@ -67,7 +67,7 @@ test('it can output custom message function', function () {
   let key = 'URL';
   let options = {
     type: 'url' as 'url',
-    message: function (key, type, value, context) {
+    message: function (key: string, type: string, value: string, context: {type: string}) {
       expect(key).toEqual('URL');
       expect(type).toEqual('url');
       expect(value).toEqual('notaurl');

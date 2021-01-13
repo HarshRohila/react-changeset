@@ -148,7 +148,7 @@ test('it can output custom message function', function () {
   let key = 'age';
   let options = {
     even: true,
-    message: function (_key: string, value: any, context) {
+    message: function (_key: string, value: any, context: { even: any; }) {
       expect(_key).toEqual(key);
       expect(value).toEqual(33);
       expect(context.even).toEqual(true);

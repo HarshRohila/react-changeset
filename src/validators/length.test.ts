@@ -53,7 +53,7 @@ test('it can output custom message function', function () {
   let key = 'firstName';
   let options = {
     is: 2,
-    message: function (_key, type, value, context) {
+    message: function (_key: string, type: any, value: any, context: { is: any; }) {
       expect(_key).toEqual(key);
       expect(type).toEqual('wrongLength');
       expect(value).toEqual('abc');

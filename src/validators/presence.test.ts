@@ -52,7 +52,7 @@ test('it can output a custom message function', function () {
   let key = 'firstName';
   let options = {
     presence: false,
-    message: function (_key, type, value, context) {
+    message: function (_key: any, type: any, value: any, context: { presence: any; }) {
       expect(_key).toEqual(key);
       expect(type).toEqual('blank');
       expect(value).toEqual('test');
