@@ -28,7 +28,7 @@ const user = {
 import useChangeset from 'react-changeset';
 
 // without validations
-const userChangeset = useChangeset(user);
+const { userChangeset } = useChangeset(user);
 
 // with validations
 const userChangeset = useChangeset(
@@ -57,9 +57,7 @@ Example validation map [here]()
 - Get only changed fields to send for PUT/PATCH request
 
 ```jsx
-{
-  userChangeset.changes;
-}
+userChangeset.changes;
 ```
 
 - Enable/Disable submit button
