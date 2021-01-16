@@ -175,3 +175,6 @@ Validates that a field has the same value as another.
 }
 ```
 
+## Custom Validators
+
+For writing your own validators, refer 'Writing your own validators' section of [ember-changeset-validations](https://github.com/poteto/ember-changeset-validations)
